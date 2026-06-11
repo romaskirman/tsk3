@@ -13,7 +13,8 @@ function gcd(a, b) {
 
 // Функция для вычисления НОК (наименьшее общее кратное)
 function lcm(a, b) {
-    return (a / gcd(a, b)) * b;
+    const g = gcd(a, b);
+    return (a * b) / g; 
 }
 
 // Обработчик HTTP запросов
